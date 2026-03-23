@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "SomMod",
+  "version": "1.0",
+  "description": "Bunch of cool mods",
+  "content_scripts": [
+    {
+      "matches": ["https://leerling.somtoday.nl/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "somtoday-unlocker@example.com"
+    }
+  }
+}
